@@ -4,7 +4,7 @@ DOINSTALL=true
 
 #Copy env
 mv ../.env.template ../.env
-
+chmod
 # Check if user is root
 if [[ $EUID -ne 0 ]]; then
    echo "This script must be run as root"
@@ -61,7 +61,7 @@ echo "Script executed."
 
 
 #Start Docker
-sudo docker-compose up -d
+sudo docker compose --env-file ../.env up -d
 
 #Populate Database
 echo "Waiting for 20 seconds..."
