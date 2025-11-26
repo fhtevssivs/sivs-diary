@@ -31,6 +31,10 @@ sudo ./install.sh
 3. Setup Python environment and install dependencies from "requirements.txt"
 4. Run `python3 create_db.py`
 
+# Overview Python and JS Components
+
+
+
 ```mermaid
 graph LR
     %% --- STYLING DEFINITONEN ---
